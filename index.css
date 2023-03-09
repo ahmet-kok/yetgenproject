@@ -1,0 +1,149 @@
+.container {
+    padding-top: 20px;
+    max-width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    min-height: 100%;
+    padding-bottom: 20px;
+    
+
+}
+
+.firstbox {
+    justify-content: center;
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+.box {
+    display: inline-block;
+    position: relative;
+    box-sizing:border-box;
+    margin: 10px;
+    height: 370px;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(26,22,62,255);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.box button:hover {
+        transform: translate(-50%,-4%);
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+        background-color: rgba(245,49,63,255);
+        color: white;
+        box-shadow: 3px 3px 3px rgba(60, 64, 67, 0.3) ;
+    
+   
+}
+
+.box button:active {
+    transform: translateX(-50%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.1s;
+    transition-property: all;
+    background-color: rgba(246,72,85,255);
+    color: aliceblue;
+    box-shadow: 1px 1px 4px rgba(0,0,0,2) ;
+}
+
+.box button{
+    position: absolute;
+    display: block;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgba(245,49,63,255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 30px;
+    border: 0px;
+    appearance: none;
+}
+
+
+.box p, .box h1, .box h2, .box a{
+    color: white;
+}
+
+.box-2 {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+ width: 90%;
+}
+
+.box-2 h1 {
+    font-size: 26px;
+    min-height: 90px;
+
+}
+
+.box-2 h2 {
+    min-height: 3px;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.box:hover {
+    transform: translateY(-0.5%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: all;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 5px 3px, rgba(60, 64, 67, 0.15) 0px 5px 50px 5px;
+
+
+}
+
+.box-2 a:hover {
+    background-color: rgba(245,49,63,255);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+.box-2 a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 730px) {
+    .firstbox {
+        width: 95%;
+    }
+    .box {
+        width: 100%;
+        max-width: 370px;
+    }
+    .box-2 {
+        width: 80%;
+    }
+    .box button {
+        width: 70%;
+        
+    }
+    * {
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.6s;
+        transition-property: all;
+    }
+
+}

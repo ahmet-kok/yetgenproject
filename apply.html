@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="telselector/css/intlTelInput.css">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="yetgen-beyaz.png" alt="YetGen">
+            </div>
+            <ul class="header-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a style="text-decoration: underline 0.15em white;" href="apply.html">Apply</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="body">
+        <div class="box">
+            <div class="box-header">
+                <h1>2. aşama Başvuruları Başladı!</h1>
+                <p>Aşağıdaki formu doldurarak yeni dönemimize başvurabilirsin.</p>
+            </div> 
+            <form onkeydown="return event.key != 'Enter';">
+                <div class="box-2">
+                    <div class="li">
+                        <input type="text" class="form-control" placeholder="First Name" value="" name="fname" required/>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Last Name" value="" name="lname" required/>
+                    </div>
+                    <div>
+                        <input type="text" id="mobile_code" class="phone" placeholder="Phone Number" name="phone" minlength="10" maxlength="10" required>
+                    </div>
+                    <div class="li">
+                        <input type="email" class="form-control" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div>
+                        <select name="country" class="countries order-pop presel-TR select-box" id="countryId" required>
+                            <option selected disabled value="">Select Country</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="state" class="states order-alpha select-box" id="stateId">
+                            <option selected disabled value="">Select State</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="city" class="cities order-alpha select-box" id="cityId" required>
+                            <option selected disabled value="">Select City</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <input type='radio' id='male' checked='checked' name='radio' required>
+                        <label for='male'>Male</label>
+                        <input type='radio' id='female' name='radio' required>
+                        <label for='female'>Female</label>
+                    </div>
+                    <div class="checkbox">
+                        <div>
+                            <label for="aydinlatma">İşbu Aydınlatma Metni'ni okudum onaylıyorum.</label>
+                            <input type="checkbox" id="aydinlatma" name="aydinlatma" value="aydinlatma" required/>
+                            
+                        </div>
+                        <div>
+                            <label for="kvkk">İşbu Aydınlatma Metni kapsamında belirtilen amaçlar ile sınırlı olarak kişisel verilerimin KVKK Md.9/1 uyarınca açık rızam dahilinde Google Drive / Microsoft saklama hizmetleri için yurt dışına aktarılmasını onaylıyorum.</label>
+                            <input type="checkbox" id="kvkk" name="kvkk" value="kvkk" />
+                        </div>
+
+                    </div>
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+                    <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+                </div>
+                <button id="submit" type="submit" >Submit</button>
+                </form>
+        </div>
+    </div>
+<script src="telselector/js/intlTelInput.js"></script>
+<script src="test.js"></script>
+<script>
+    var input = document.querySelector("#mobile_code");
+    window.intlTelInput(input, {
+    initialCountry: "tr",
+    separateDialCode: true,
+
+    });
+</script>
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Yetkin Gençler</a></li>
+            <li><a href="mzv">MZV</a></li>
+            <li><a href="mef">MEF</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!--
+        <label for="country">Ülke</label>
+    <select id="country" name="country">
+
+        <option value="turkey">Türkiye</option>
+      <option value="germany">Almanya</option>
+      <option value="uk">İngiltere</option>
+
+    </select>
+    <select id="city" name="city">
+
+        <option value="antalya">Antalya</option>
+      <option value="istanbul">İstanbul</option>
+      <option value="ankara">Ankara</option>
+
+    </select>
+-->
