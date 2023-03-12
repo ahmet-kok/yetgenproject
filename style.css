@@ -201,7 +201,7 @@ footer {
     }
     .header-menu:hover > li, .header-menu > li > a {
         transform: unset;
-        
+
         display: block;
     }
 
