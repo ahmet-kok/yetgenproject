@@ -29,7 +29,7 @@
 
 }
 
-.body h1 {
+.box-2 > h1 {
     color: white;
     width: max-content;
     margin-left: auto;
@@ -41,7 +41,7 @@
 
 
 }
-.box-header p {
+.box-2 > p {
     color: white;
     width: max-content;
     margin-left: auto;
@@ -53,11 +53,130 @@
 
 }
 
+.box-body {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+}
 
-.box {
+.box-body > ul{
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     height: max-content;
     padding-bottom: 50px;
+    
+}
+.box-body > ul > li{
+    margin: 15px;
+    justify-self: center;
+    display: inline-flex;
+    width: max-content;       
+    
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+.card > img {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    border-radius: 15px;
+    filter:grayscale(0.2) brightness(0.9);
+    transition: filter .51s;
+
+}
+
+.card > img:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+.card-body {
+    margin-left: 10px;
+    margin-top: 5px;
+
+
+}
+
+.card-body > h1 {
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.card-body > ul {
+    display: inline-flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+
+.card-body > ul > li {
+    margin-bottom: 7px;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.card-body > p, .card-body > ul > li {
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    border: 2px solid rgb(55, 124, 202);
+    transition: 0.5s ease-in-out background-color, 0.5s ease-out color, 0.5s ease-out border-color;
+
+}
+
+.card-body > p:hover, .card-body > ul > li:hover {
+    color:white;
+    background-color: coral;
+    border: 2px solid rgb(81, 172, 246);
+}
+
+.card-body > p {
+    width: 85%;
+}
+
+@media only screen and ( min-width: 1000px) {
+    .card {
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+}
+
+@media only screen and (max-width: 1000px ) and ( min-width: 750px) {
+    .card {
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .card {
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;    }
 
 }

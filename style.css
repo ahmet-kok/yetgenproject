@@ -160,3 +160,50 @@ footer {
     }
 
 }
+@media only screen and (min-width: 1126px) {
+    .header-menu > img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1126px) {
+    .header-menu {
+        margin: 0;
+        top: 0;
+        right: 0;
+        left:unset ;
+        transform: none;
+        -ms-transform: none;
+        width: 160px;
+        position: absolute;
+        display: block;
+        z-index: 1;
+    }
+    .header-menu > li > a{
+        
+        font-size: 20px;
+    }
+    .header-menu > li{
+            flex-wrap: nowrap;
+    background-color: rgba(245,49,63,255);
+            display: none;
+        }
+        .header-menu > img {
+            float: right;
+        margin-bottom: 20px;
+        width: 40px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-right: 30px;
+        margin-top: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+    .header-menu:hover > li, .header-menu > li > a {
+        transform: unset;
+        
+        display: block;
+    }
+
+ 
+}
