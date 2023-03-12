@@ -31,21 +31,25 @@
                 <h1>Bizimle iletişime geç.</h1>
             </div> 
             <div class="box-body">
-            <form onkeydown="return event.key != 'Enter';">
+                <form>
                     <div class="ul">
                         <div class="li">
                             <input type="text" class="form-control" placeholder="Name" value="" name="fname" required/>
                         </div>
-                        <div class="li">
-                            <input type="email" class="form-control" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            <div class="li">
+                                <input type="email" class="form-control" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <textarea rows="5" placeholder="Message" name="message" required></textarea>
                         </div>
                     </div>
-                    <div class="textbox">
-                       <textarea rows="5" placeholder="Message" name="message" required>
+                    <div class="button">
+                        <button id="submit" type="submit" >Gönder</button>
+
                     </div>
-                </div>
-                <button id="submit" type="submit" >Gönder</button>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 

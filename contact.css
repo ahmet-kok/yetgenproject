@@ -15,6 +15,7 @@
     border-top-right-radius: 16px;
     border: 1px;
     border-style:groove;
+    border-bottom: 0px;
 
 }
 .box-header > h1 {
@@ -53,9 +54,9 @@ input:focus{
 }
 
 form {
+    margin-top: 30px;
     width: 100%;
     max-width: 550px;
-    background-color: red;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,29 +71,31 @@ form > .textbox > textarea {
     margin-left: auto;
     margin-right: auto;
     resize:none;
-    width: 95%;
-    height: max-content;
+    width: 450px;
     font-size: 17px;
-    background-color: #FFF;
+    min-height: 80px;
     color: #475F7B;
     border-radius: 7px;
     border: 1px solid #DFE3E7;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow: hidden;
+    padding: 12px 20px;
+
 
 
 
 }
 
 form > .textbox {
-    background-color: #475F7B;
     text-align: center;
 }
 
 
 .form-control {
-
-    margin: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 17px;
     width: 200px;
     background-color: #FFF;
@@ -105,7 +108,7 @@ form > .textbox {
 }
 
 
-.form-control:focus, .form-control:hover{
+.form-control:focus, .form-control:hover, form > .textbox > textarea:hover, form > .textbox > textarea:focus{
     color: #475F7B;
     background-color: #FFF;
     border: 1px solid #5A8DEE;
@@ -114,26 +117,24 @@ form > .textbox {
     box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
 }
 
-
-#submit {
+.button {
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    float: right;
-    width: 150px;
+    height: max-content;
+    width: max-content;
+}
+
+#submit {
+    width: 300px;
     height: 50px;
     color: white;
     background-color: rgba(245,49,63,255);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
     border-radius: 5px;
     border-color: none;
     font-size: 30px;
     border: 0px;
     appearance: none;
-    bottom: 15%;
     
 
 }
@@ -171,5 +172,16 @@ transition-property: all;
 background-color: rgba(245,49,63,0.9);
 color: white;
 box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
+}
+
+@media only screen and (max-width: 570px) {
+    .form-control {
+    width: 360px;
+    }
+
+    form > .textbox > textarea {
+        width: 353px;
+    }
 
 }
