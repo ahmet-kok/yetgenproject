@@ -1,0 +1,175 @@
+.body {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.box-header {
+    
+    background-image: url(https://picsum.photos/1000/200);  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border: 1px;
+    border-style:groove;
+
+}
+.box-header > h1 {
+    color: white;
+    text-shadow: #475F7B   0px 0px 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+    padding-bottom: 10px;
+    max-width: 90%;
+    text-align: center;
+
+
+}
+
+.box {
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+    margin-top: 30px;
+    border-radius: 16px;
+    height: max-content;
+    padding-bottom: 50px;
+    border: 1px;
+    border-style:groove;
+
+}
+
+button:focus,
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+form {
+    width: 100%;
+    max-width: 550px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > .ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+form > .textbox > textarea {
+    margin-left: auto;
+    margin-right: auto;
+    resize:none;
+    width: 95%;
+    height: max-content;
+    font-size: 17px;
+    background-color: #FFF;
+    color: #475F7B;
+    border-radius: 7px;
+    border: 1px solid #DFE3E7;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+
+}
+
+form > .textbox {
+    background-color: #475F7B;
+    text-align: center;
+}
+
+
+.form-control {
+
+    margin: 10px;
+    padding: 17px;
+    width: 200px;
+    background-color: #FFF;
+    color: #475F7B;
+    border-radius: 7px;
+    border: 1px solid #DFE3E7;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+
+.form-control:focus, .form-control:hover{
+    color: #475F7B;
+    background-color: #FFF;
+    border: 1px solid #5A8DEE;
+    border-color: #5A8DEE;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    float: right;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgba(245,49,63,255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 30px;
+    border: 0px;
+    appearance: none;
+    bottom: 15%;
+    
+
+}
+
+input:focus:required:invalid {border: 1px solid rgba(245,49,63,255);}
+input:valid , select:valid{ border: 1px solid green; }
+
+input:invalid {
+    border: 1px solid rgba(245,49,63,255);
+}
+input:empty {
+    border: 1px solid #DFE3E7;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+#submit:hover {
+    transform: translateY(-4%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: all;
+    background-color: rgba(245,49,63,0.95);
+    color: white;
+    box-shadow: 3px 3px 3px rgba(60, 64, 67, 0.3) ;
+
+
+}
+
+#submit:active {
+transform: translateY(0%);
+transition-timing-function: ease-in-out;
+transition-duration: 0.1s;
+transition-property: all;
+background-color: rgba(245,49,63,0.9);
+color: white;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
+}
