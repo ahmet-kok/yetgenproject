@@ -63,11 +63,18 @@
 }
 
 .box-body > p {
-    font-size: 17px;
+    line-height: 1.5em;
     margin-bottom: 20px;
+    font-size: 15px;
+    font-style: inherit;
+    -webkit-font-smoothing: antialiased;
+
 }
 
 .centered-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     font-size: 20px;
     text-align: center;
 }
