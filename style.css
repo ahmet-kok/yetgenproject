@@ -190,9 +190,14 @@ footer {
     }
     .header-menu > li{
             flex-wrap: nowrap;
-    background-color: rgba(245,49,63,255);
+            background-color: rgba(245,49,63,255);
             display: none;
+
         }
+        .header-menu > li:last-child{
+            border-bottom-left-radius: 10px;
+        }
+
         .header-menu > img {
             float: right;
         margin-bottom: 20px;
