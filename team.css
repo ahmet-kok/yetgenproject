@@ -147,6 +147,8 @@
     width: 85%;
 }
 
+
+
 @media only screen and ( min-width: 1000px) {
     .card {
         transition-timing-function: ease-in-out;
