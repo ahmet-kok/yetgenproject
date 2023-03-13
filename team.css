@@ -108,6 +108,7 @@
 }
 
 .card-body > h1 {
+    color: #1b163e;
     margin-left: 1%;
     margin-bottom: 2%;
     font-size: 40px;
@@ -121,27 +122,57 @@
 }
 
 .card-body > ul > li {
+    width: max-content;
     margin-bottom: 7px;
     margin-top: 10px;
-    border-radius: 30px;
     margin-right: 10px;
 }
 
 .card-body > p, .card-body > ul > li {
     border-radius: 30px;
-    padding: 10px;
+    height: max-content;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-top: 5px;
     font-size: 20px;
-    border: 2px solid rgb(55, 124, 202);
     transition: 0.5s ease-in-out background-color, 0.5s ease-out color, 0.5s ease-out border-color;
 
 }
 
-.card-body > p:hover, .card-body > ul > li:hover {
-    color:white;
-    background-color: coral;
-    border: 2px solid rgb(81, 172, 246);
+.card-body > ul > li:nth-child(2){
+    border: 2px solid #008CBA;    
 }
+
+.card-body > ul > li:nth-child(2):hover, .card-body > ul > li:nth-child(2):focus, .card-body > ul > li:nth-child(2):active{
+    background-color: #008CBA;
+    border: 2px solid grey;
+    color: white;
+}
+
+.card-body > ul > li:nth-child(1){
+    border: 2px solid #4CAF50;    
+}
+
+.card-body > ul > li:nth-child(1):hover, .card-body > ul > li:nth-child(2):focus, .card-body > ul > li:nth-child(2):active{
+    background-color: #4CAF50;
+    border: 2px solid grey;
+    color: white;
+}
+
+
+.card-body > p {
+    text-align: center;
+    border: 2px solid #DAA71D;
+
+}
+.card-body > p:hover {
+    color:white;
+    background-color: #DAA71D;
+    border: 2px solid grey;
+}
+
 
 .card-body > p {
     width: 85%;
