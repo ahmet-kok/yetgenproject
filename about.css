@@ -34,7 +34,7 @@
 
 }
 
-.img > img {
+.img > img, .img > a > img {
 
     margin-left: auto;
     margin-right: auto;
@@ -42,7 +42,7 @@
     height: auto;
 }
 
-.img > p {
+.img > p, .img > a > p {
     color: #1b163e;
     font-size: 16px;
     text-align: center;
@@ -77,6 +77,23 @@
     width: 80%;
     font-size: 20px;
     text-align: center;
+}
+
+#specialdesign {
+    color: darkgreen;
+    text-align: center;
+    padding: 30px;
+    background-color: #BAB095;
+    border: 7px double;
+    border-radius: 10px;
+}
+
+#specialdesign h1 {
+    color: darkgreen;
+
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 @media only screen and (min-width: 1300px) {
